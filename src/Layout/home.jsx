@@ -1,6 +1,6 @@
 
 import Himg1 from '../assets/home-img1.png';
-import Line from '../assets/line.png';
+import Line from '../assets/Line.png';
 import Lab from '../assets/lab.jpg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
