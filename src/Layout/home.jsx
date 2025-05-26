@@ -23,26 +23,28 @@ const Home = () => {
                     <p className="mt-4 text-lg w-1/2">Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis </p>
                 </div>
             </div>
-            <div className="w-[90%] mx-auto flex gap-4 py-10">
-                <div className='w-1/2 flex flex-col gap-[21px]'>
+
+            <div className="w-[90%] mx-auto flex flex-col md:flex-row gap-4 py-10">
+                <div className='w-full md:w-1/2 flex flex-col gap-[21px]'>
                     <div className='flex items-end'>
-                        <h2 className='text-[#151515F] font-semibold text-[40px]'>About Us</h2>
-                        <img src={Line} alt="" />
+                        <h2 className='text-[#151515F] font-semibold text-[25px] md:text-[25px] md:text-[40px]'>About Us</h2>
+                        <img className='hidden md:block' src={Line} alt="" />
                     </div>
-                    <p>
+                    <p className='text-[12px] md:text-[16px]'>
                         Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus. Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus.Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus.Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus.Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus.
                     </p>
-                    <a href="" className="decoration-none text-[#003A70] font-semibold">Learn More </a>
+                    <a href="" className="decoration-none text-[12px] md:text-[14px] text-[#003A70] font-semibold">Learn More </a>
                 </div>
-                <div className="w-1/2">
+                <div className="w-full md:w-1/2">
                     <img src={Himg1} alt="" />
                 </div>
             </div>
+
             <div className="w-[90%] mx-auto flex flex-col gap-[20px] py-10">
                 <div className='w-2/3 flex flex-col gap-[21px]'>
                     <div className='flex items-end'>
-                        <h2 className='text-[#151515F] font-semibold text-[40px]'>Meet Our Team</h2>
-                        <img src={Line} alt="" />
+                        <h2 className='text-[#151515F] font-semibold text-[25px] md:text-[40px]'>Meet Our Team</h2>
+                        <img className='hidden md:block' src={Line} alt="" />
                     </div>
                 </div>
                 <div>
@@ -52,8 +54,25 @@ const Home = () => {
                         slidesPerView={3.4}
                         autoplay={{ delay: 3000 }}
                         loop
-                        // onSwiper={(swiper) => (swiperRef.current = swiper)}
-                        className='myswiper'
+                        className="myswiper"
+                        breakpoints={{
+                            // when window width is >= 320px
+                            320: {
+                                slidesPerView: 1.2,
+                            },
+                            // when window width is >= 640px
+                            640: {
+                                slidesPerView: 1.8,
+                            },
+                            // when window width is >= 768px
+                            768: {
+                                slidesPerView: 2.2,
+                            },
+                            // when window width is >= 1024px
+                            1024: {
+                                slidesPerView: 3.4,
+                            },
+                        }}
                     >
                         <SwiperSlide>
                             <div class="p-4 ">
@@ -133,8 +152,8 @@ const Home = () => {
             <div className="w-[90%] mx-auto flex flex-col gap-[20px] py-10">
                 <div className='w-1/2 flex flex-col gap-[21px]'>
                     <div className='flex items-end'>
-                        <h2 className='text-[#151515F] font-semibold text-[40px]'>Our Projects</h2>
-                        <img src={Line} alt="" />
+                        <h2 className='text-[#151515F] font-semibold text-[25px] md:text-[40px]'>Our Projects</h2>
+                        <img className='hidden md:block' src={Line} alt="" />
                     </div>
                 </div>
                 <div className='flex gap-[20px]'>
@@ -247,12 +266,12 @@ const Home = () => {
             <div className="w-[90%] mx-auto flex flex-col gap-[20px] py-10">
                 <div className='w-1/2 flex flex-col gap-[21px]'>
                     <div className='flex items-end'>
-                        <h2 className='text-[#151515F] font-semibold text-[40px]'>Our Labs</h2>
-                        <img src={Line} alt="" />
+                        <h2 className='text-[#151515F] font-semibold text-[25px] md:text-[40px]'>Our Labs</h2>
+                        <img className='hidden md:block' src={Line} alt="" />
                     </div>
                 </div>
-                <div className='flex gap-[20px]'>
-                    <div className='w-1/2'>
+                <div className='flex flex-col md:flex-row gap-[20px]'>
+                    <div className='w-full md:w-1/2'>
                         <div>
                             <a href="#" class="group relative flex h-96 items-center overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg">
                                 <img src={Lab} loading="lazy" alt="Photo by Austin Wade" class="absolute inset-0 h-full w-full object-fill object-center transition duration-200 group-hover:scale-110" />
@@ -265,7 +284,7 @@ const Home = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='w-1/2'>
+                    <div className='w-full md:w-1/2'>
                         <div>
                             <a href="#" class="group relative flex h-96 items-center overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg">
                                 <img src={Lab} loading="lazy" alt="Photo by Austin Wade" class="absolute inset-0 h-full w-full object-fill object-center transition duration-200 group-hover:scale-110" />

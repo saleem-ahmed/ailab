@@ -9,16 +9,16 @@ const Navbar = () => {
   return (
     <header className="text-gray-600 body-font">
       <div className='bg-[#003A70]'>
-        <ul className='w-[90%] mx-auto flex gap-[10px]' >
-          <li className='flex items-center justify-start text-white gap-4 py-5'>
+        <ul className='w-[90%] mx-auto flex flex-col md:flex-row items-center justify-center md:justify-start py-3  gap-[10px]' >
+          <li className='flex items-center justify-start text-white gap-4 py-0 md:py-5'>
             <img className="w-[26px] h-[26px]" src={PhoneIcon} alt="" />
             <a href="tel:+9083411912">09083411912</a>
           </li>
-          <li className='flex items-center justify-start text-white gap-2 py-2'>
+          <li className='flex items-center justify-start text-white gap-2 py-0 md:py-5'>
             <img className="w-[26px] h-[26px]" src={MailIcon} alt="" />
             <a href="mailto:asrad454#@gmail.com">asrad454#@gmail.com</a>
           </li>
-          <li className='flex items-center justify-start text-white gap-4 py-2'>
+          <li className='flex items-center justify-start text-white gap-4 py-0 md:py-5'>
             <img className="w-[26px] h-[26px]" src={LocationIcon} alt="" />
             KIU  Gilgit Baltistan
           </li>
