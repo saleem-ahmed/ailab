@@ -3,6 +3,7 @@ import logo from '../assets/AILAB.png';
 import LocationIcon from '../assets/icons/location.png';
 import PhoneIcon from '../assets/icons/phone.png';
 import MailIcon from '../assets/icons/mail.png';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,9 +27,9 @@ const Navbar = () => {
       </div>
       <div className="w-[90%] mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center justify-between">
         {/* Logo */}
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <Link to="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <img className='w-[112px] h-[60px]' src={logo} alt="" />
-        </a>
+        </Link>
 
         {/* Hamburger Icon */}
         <button
@@ -46,8 +47,8 @@ const Navbar = () => {
           className={`${isOpen ? 'flex' : 'hidden'
             } md:flex flex-col md:flex-row md:items-center w-full md:w-auto mt-4 md:mt-0`}
         >
-          <a className="mr-5 hover:text-gray-900 cursor-pointer">Home</a>
-          <a className="mr-5 hover:text-gray-900 cursor-pointer">About us</a>
+          <Link to="/" className="mr-5 hover:text-gray-900 cursor-pointer">Home</Link>
+          <Link to="/about" className="mr-5 hover:text-gray-900 cursor-pointer">About us</Link>
           <a className="mr-5 hover:text-gray-900 cursor-pointer">Team</a>
           <a className="mr-5 hover:text-gray-900 cursor-pointer">Projects</a>
           <a className="mr-5 hover:text-gray-900 cursor-pointer">Labs</a>

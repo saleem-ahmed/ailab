@@ -1,15 +1,9 @@
-import Footer from "./component/footer"
-import Navbar from "./component/navbar"
-import Home from "./Layout/home"
+// App.jsx
+import { RouterProvider } from "react-router-dom";
+import router from "./component/router";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Home />
-      <Footer />
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
