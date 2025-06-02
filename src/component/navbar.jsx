@@ -73,9 +73,10 @@ const Navbar = () => {
             <span className="hover:text-gray-900">Labs</span>
             {isLabsDropdownOpen && (
               <div className="absolute top-full left-0 bg-white border rounded shadow-md z-50 min-w-[160px]">
-                <Link to="/lab/ai" className="block px-4 py-2 hover:bg-gray-100 text-sm">AI Lab</Link>
-                <Link to="/lab/robotics" className="block px-4 py-2 hover:bg-gray-100 text-sm">Robotics Lab</Link>
-                <Link to="/lab/datascience" className="block px-4 py-2 hover:bg-gray-100 text-sm">Data Science Lab</Link>
+                <Link to="/lab" className="block px-4 py-2 hover:bg-gray-100 text-sm">AI Lab</Link>
+                <Link to="/lab2" className="block px-4 py-2 hover:bg-gray-100 text-sm">Second Lab</Link>
+                {/* <Link to="/lab/robotics" className="block px-4 py-2 hover:bg-gray-100 text-sm">Robotics Lab</Link>
+                <Link to="/lab/datascience" className="block px-4 py-2 hover:bg-gray-100 text-sm">Data Science Lab</Link> */}
               </div>
             )}
           </div>

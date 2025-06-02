@@ -19,7 +19,7 @@ import TwitterIcon from '../assets/icons/twitter.png';
 import PrintestIcon from '../assets/icons/printrest.png';
 import LinkedInIcon from '../assets/icons/linkedin.png';
 
-const Labs = () => {
+const Labs2 = () => {
     return (
         <>
             <div className="relative w-full h-[590px] bg-[url('/src/assets/ipad-bg.jpg')] bg-cover bg-center flex items-center justify-center">
@@ -30,7 +30,7 @@ const Labs = () => {
                 <div className="relative z-10 text-white  text-center flex flex-col items-center justify-end h-full">
                     <div className="bg-[#003A70CC] w-max flex flex-col items-center justify-center p-8">
 
-                        <h1 className="text-4xl font-bold">AI( Artificial Intelligence) Lab</h1>
+                        <h1 className="text-4xl font-bold">AI( Artificial Intelligence) Lab 2</h1>
                         <p className="mt-4 text-lg w-1/2">Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis </p>
                         <button className="border border-[#F2A900] text-[#F2A900] font-semibold px-6 py-2 mt-4 rounded hover:bg-[#F2A900] hover:text-white transition-colors">
                             Register now
@@ -295,4 +295,4 @@ const Labs = () => {
         </>
     );
 }
-export default Labs;
+export default Labs2;
