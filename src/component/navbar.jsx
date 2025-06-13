@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import logo from '../assets/AILAB.png';
 import LocationIcon from '../assets/icons/location.png';
 import PhoneIcon from '../assets/icons/phone.png';
@@ -6,6 +6,7 @@ import MailIcon from '../assets/icons/mail.png';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
 
   return (
     <header className="text-gray-600 body-font">
