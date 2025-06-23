@@ -19,8 +19,8 @@ const Home = () => {
 
                 {/* Content (appears above overlay) */}
                 <div className="relative z-10 text-white text-center flex flex-col items-center justify-center h-full">
-                    <h1 className="text-4xl font-bold">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p className="mt-4 text-lg w-1/2">Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis </p>
+                    <h1 className="text-4xl font-bold">Driving Ai Innovation for Real-world Impact.</h1>
+                    <p className="mt-4 text-lg w-1/2">We pionneer advancements in Artifical Intelligence to slove real-world chanllenges and shape an integent future. Committed to continuous learning, adaptation and evolution, we transform data into deployable, smart solutions that make a measureable difference.</p>
                 </div>
             </div>
 
@@ -31,7 +31,11 @@ const Home = () => {
                         <img className='hidden md:block' src={Line} alt="" />
                     </div>
                     <p className='text-[12px] md:text-[16px]'>
-                        Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus. Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus.Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus.Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus.Lorem ipsum dolor sit amet consectetur. Integer orci viverra nisl quam habitant eu ut amet. Faucibus nunc interdum duis mauris turpis augue lorem placerat rhoncus.
+                        The Artificial Intelligence Lab at Karakoram International University (KIU) is dedicated to advancing research, innovation, and education in the field of Artificial Intelligence. We strive to create a dynamic research and teaching environment that equips students and faculty with cutting-edge knowledge in computer technology, fosters creative problem-solving, and promotes socially responsible innovation.
+                        Equipped with a high-performance computing infrastructure, the lab serves as a vital platform for advanced AI research, empowering faculty and students to address real-world challenges through intelligent, deployable solutions. Our work spans a wide range of applications, with a special focus on Geographic Information Systems (GIS) and remote sensing.
+                        As a growing hub for AI-powered geospatial research, the lab is actively developing and applying machine learning and deep learning tools to analyze, interpret, and predict patterns from spatial and satellite data. By integrating AI with GIS and remote sensing, we aim to improve the accuracy, efficiency, and decision-making capabilities across sectors such as urban planning, disaster management, agriculture, and environmental monitoring.
+                        We are committed to continuous learning and innovation, transforming ideas into impactful technologies that benefit local, national, and global communities across all areas of life.
+
                     </p>
                     <a href="" className="decoration-none text-[12px] md:text-[14px] text-[#003A70] font-semibold">Learn More </a>
                 </div>

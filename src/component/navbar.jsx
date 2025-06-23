@@ -3,14 +3,14 @@ import logo from '../assets/AILAB.png';
 import LocationIcon from '../assets/icons/location.png';
 import PhoneIcon from '../assets/icons/phone.png';
 import MailIcon from '../assets/icons/mail.png';
-import { Link } from 'react-router-dom';
+import { Link, Links } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
 
   return (
     <header className="text-gray-600 body-font">
-      <div className='bg-[#003A70]'>
+      <div className='bg-[#003A70] flex'>
         <ul className='w-[90%] mx-auto flex flex-col md:flex-row items-center justify-center md:justify-start py-3  gap-[10px]' >
           <li className='flex items-center justify-start text-white gap-4 py-0 md:py-5'>
             <img className="w-[26px] h-[26px]" src={PhoneIcon} alt="" />
@@ -25,6 +25,9 @@ const Navbar = () => {
             KIU  Gilgit Baltistan
           </li>
         </ul>
+        <Link to="/login">
+        admin login
+        </Link>
       </div>
       <div className="w-[90%] mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center justify-between">
         {/* Logo */}
@@ -53,9 +56,6 @@ const Navbar = () => {
           <Link to="team" className="mr-5 hover:text-gray-900 cursor-pointer">Team</Link>
           <Link to="project" className="mr-5 hover:text-gray-900 cursor-pointer">Projects</Link>
           <Link to="lab" className="mr-5 hover:text-gray-900 cursor-pointer">Labs</Link>
-          <button className="inline-flex items-center bg-[#003A70] text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-            Join Labs
-          </button>
         </nav>
       </div>
     </header>
