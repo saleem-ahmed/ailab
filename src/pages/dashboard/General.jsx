@@ -1,3 +1,14 @@
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+
+const data = [
+  { month: 'Jan', requests: 25 },
+  { month: 'Feb', requests: 40 },
+  { month: 'Mar', requests: 35 },
+  { month: 'Apr', requests: 50 },
+  { month: 'May', requests: 30 },
+  { month: 'Jun', requests: 45 },
+];
+
 const General = () => {
   return (
     <div className="space-y-8">
@@ -45,17 +56,24 @@ const General = () => {
         ))}
       </div>
 
-      {/* Lab Slot Requests Chart Placeholder */}
+      {/* Chart Section */}
       <div className="bg-white p-6 rounded-lg shadow">
         <h3 className="text-lg font-semibold text-gray-800 mb-4">Lab Slot Requests (Last 6 Months)</h3>
-        <div className="h-56 bg-gray-100 flex items-center justify-center text-gray-400">
-          [Chart Placeholder]
+        <div className="h-64">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={data}>
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="month" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="requests" fill="#3B82F6" />
+            </BarChart>
+          </ResponsiveContainer>
         </div>
       </div>
 
       {/* Latest Requests */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Equipment Requests */}
         <div className="bg-white p-6 rounded-lg shadow">
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Latest Equipment Requests</h3>
           <ul className="space-y-3 text-sm text-gray-600">
@@ -65,7 +83,6 @@ const General = () => {
           </ul>
         </div>
 
-        {/* Lab Slot Approvals */}
         <div className="bg-white p-6 rounded-lg shadow">
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Recent Lab Slot Approvals</h3>
           <ul className="space-y-3 text-sm text-gray-600">

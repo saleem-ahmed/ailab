@@ -14,6 +14,8 @@ import EquipmentRequestForm from "./equiprequestform.jsx"
 import General from "../pages/dashboard/General.jsx";
 import Equipments from "../pages/dashboard/Equipments.jsx";
 import Approvals from "../pages/dashboard/Approvals.jsx";
+import EquipmentsIsued from "../pages/dashboard/inventoryissued.jsx";
+import Lab2 from "../Layout/lab2.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,7 @@ const router = createBrowserRouter([
       { path: "team", element: <Teams /> },
       { path: "project", element: <Projects /> },
       { path: "lab", element: <Labs /> },
+      { path: "lab2", element: <Lab2 /> },
       { path: "labRequestForm", element: <LabRequestForm /> },
       { path: "equipRequestForm", element: <EquipmentRequestForm /> },
     ],
@@ -42,6 +45,7 @@ const router = createBrowserRouter([
       { path: "general", element: <General /> }, // /admin/general
       { path: "equipment", element: <Equipments /> }, // /admin/teams
       { path: "approvals", element: <Approvals /> }, // /admin/approvals
+      { path: "issued", element: <EquipmentsIsued /> }, // /admin/approvals
     ],
   },
 ]);
